@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+* {
+    font-family: 'Roboto',sans-serif;
+}
+
+
+* img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.container-fluid{
+    display: flex;
+}
+
+.right-bg{
+    padding: 48px 16px 48px 48px;
+}
+
+.title{
+    padding-left: 20px;
+    border-left: solid 10px #f4780c;
+}
+
+
+
+/*************** header ***************/
+.left-bg{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    justify-content: space-between;
+    padding: 48px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url("https://media.giphy.com/media/qajXB8w1cnVOo/giphy.gif");
+    background-size: 100%;
+    background-attachment: scroll;
+    background-position: center top;
+    color: #e5e5e5;
+}
+
+.my-photo{
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+}
+
+.iconbox-t{
+    justify-content: flex-end;
+}
+
+
+.fa-facebook, .fa-instagram, .fa-envelope{
+    transition: 0.5s;
+    color: #e5e5e5;
+}
+
+.fa-facebook:hover, .fa-instagram:hover, .fa-envelope:hover{
+    color: #f4780c;
+}
+
+
+
+/*************** 關於我 ***************/
+.intro{
+    line-height: 1.8;
+    width: 90%;
+}
+
+
+
+/*************** 網頁技能 ***************/
+.skillcard{
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+
+.skillcard:hover{
+    border-color: #f4780c;
+    box-shadow: 0px 0px 0px 3px rgba(244, 120, 12, 0.25);
+    background: rgba(244, 120, 12, 0.05);
+}
+.skillcard:active {
+    border-color: #f4780c;
+    box-shadow: 0px 0px 0px 5px #f4780c;
+    
+}
+
+.card-title{
+    border-bottom: solid 1px #f4780c;
+}
+
+.card-body{
+    display: none;
+}
+    
+
+
+
+/*************** 網站範例 ***************/
+.web-btn{
+    font-size: 16px;
+    transition: 0.3s;
+    color: #f4780c;
+    background-color: rgba(244, 120, 12, 0.15);
+}
+
+.web-btn:hover{
+    color: white;
+    background-color: #f4780c;
+}
+
+.bg-overlay{
+    position: relative;
+    padding: 20%;
+    display: none;
+    
+}
+.bg-overlay::before{
+    content:"";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 100%;
+    background-color: rgba(0, 3, 19, 0.85);
+}
+.bg-overlay::after {
+    content: "網頁履歷排版\A使用Bootstrap4排版\ARWD響應式網頁";
+    white-space: pre-wrap;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+
+/*************** Illustrator作品 ***************/
+.dark{
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dark:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: url("images/overlay.png");
+    transition: opacity 0.3s ease-in-out;
+}
+
+.view:after{
+    content: 'View';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 2px;
+    border-radius: 5px;
+    padding: 5px 20px;
+    color: #e5e5e5;
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.dark.view:hover:after{
+    opacity: 1.0;
+}
+
+.dark.view:hover:before{
+    background: url("images/overlay.png"), url("images/overlay.png");
+    opacity: 1.0;
+}
+
+
+
+/*************** Illustrator作品 ***************/
+.home, .phone, .mail{
+    color: #646464;
+    width: 40px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.button{
+    padding: 10px 60px;
+    border-radius: 5px;
+    border: solid 3px #efefef;
+    color: #787878;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover{
+    border: solid 3px #f4780c;
+    color: #f4780c;
+}
+
+
+
+/*************** footer ***************/
+.footer{
+    display: none;
+    background-image: url("https://media.giphy.com/media/qajXB8w1cnVOo/giphy.gif");
+    background-position: center bottom;
+    background-size: 100%;
+    
+}
+
+.footer.icon{
+    color: #e5e5e5;
+}
+
+
+
+/*************** lg ***************/
+@media(max-width: 1199px) {
+
+    .container-fluid{
+        display: flex;
+        flex-direction: column;
+    }
+    .right-bg {
+        padding: 48px 24px;
+    }
+
+
+
+    /********** header **********/
+    .left-bg {
+        position: relative;
+        text-align: center;
+        align-items: center;
+    }
+
+    .iconbox-t{
+        justify-content: center;
+    }
+
+
+
+    /********** 關於我 **********/
+    .intro{
+        line-height: 1.8;
+        width: 100%;
+    }
+
+
+
+    /********** footer **********/
+    .footer{
+        display: block;
+        position: relative;
+        left: auto;
+        bottom: auto;
+        
+    }
+
+    .iconbox-t{
+        display: none;
+    }
+
+    .copyright-t{
+        display: none;
+    }
+}
+
+
+
+/*************** md ***************/
+@media(max-width: 768px) {
+
+    /********** 聯絡我 **********/
+    .mailicon{
+        display: flex;
+        align-items: center;
+    }
+
+    .home, .phone, .mail{
+        width: 40px;
+        text-align: center;
+        margin-top: 0px;
+    }
+}
+
+
+
+/*************** sm ***************/
+@media(max-width: 576px) {
+
+    .right-bg{
+        padding: 36px 16px;
+    }
+
+
+    /********** 聯絡我 **********/
+    .mailicon{
+        display: none;
+    }
+}
