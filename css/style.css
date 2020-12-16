@@ -27,6 +27,7 @@
 }
 
 .title{
+    font-weight: 600;
     padding-left: 20px;
     border-left: solid 10px #f4780c;
 }
@@ -83,73 +84,43 @@
 
 /*************** 網頁技能 ***************/
 .skillcard{
-    transition: 0.7s;
-    cursor: pointer;
+    height: 200px;
 }
 
+.card-icon{
+    transform: translateY(0px);
+    width: 50%;
+    transition: 1s;
+}
+.card-icon-down{
+    transform: translateY(200px);
+}
 
-.skillcard:hover{
-    border-color: #f4780c;
-    box-shadow: 0px 0px 0px 3px rgba(244, 120, 12, 0.25);
-    background: rgba(244, 120, 12, 0.05);
-}
-.skillcard:active {
-    border-color: #f4780c;
-    box-shadow: 0px 0px 0px 5px #f4780c;
-    
-}
 
 .card-title{
+    font-size: 20px;
+    font-weight: 600;
     border-bottom: solid 1px #f4780c;
+}
+.card-text{
+    font-size: 16px;
+
 }
 
 .card-body{
-    display: none;
-}
-    
-
-
-
-/*************** 網站範例 ***************/
-.web-btn{
-    font-size: 16px;
-    transition: 0.3s;
-    color: #f4780c;
-    background-color: rgba(244, 120, 12, 0.15);
-}
-
-.web-btn:hover{
-    color: white;
-    background-color: #f4780c;
-}
-
-.bg-overlay{
-    position: relative;
-    padding: 20%;
-    display: none;
-    
-}
-.bg-overlay::before{
-    content:"";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 100%;
-    background-color: rgba(0, 3, 19, 0.85);
-}
-.bg-overlay::after {
-    content: "網頁履歷排版\A使用Bootstrap4排版\ARWD響應式網頁";
-    white-space: pre-wrap;
-    display: block;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    color: white;
+    transform: translate(-50%,-200px);
+    white-space: nowrap;
+    transition: 1s;
 }
+.card-body-down{
+    transform: translate(-50%, -50%);
+}
+
+
+/*************** 網站範例 ***************/
 
 
 /*************** Illustrator作品 ***************/
@@ -225,6 +196,12 @@
 }
 
 
+/*************** 聯絡我 ***************/
+.contact-p{
+    line-height: 1.8;
+}
+
+
 
 /*************** footer ***************/
 .footer{
@@ -243,6 +220,20 @@
 
 /*************** lg ***************/
 @media(max-width: 1199px) {
+    .skillcard {
+        height: 180px;
+    }
+    .card-title {
+        font-size: 18px;
+        font-weight: 600;
+        border-bottom: solid 1px #f4780c;
+    }
+
+    .card-text {
+        font-size: 14px;
+
+    }
+
 
     .container-fluid{
         display: flex;
@@ -297,6 +288,19 @@
 
 /*************** md ***************/
 @media(max-width: 768px) {
+    .skillcard {
+        height: 150px;
+    }
+    .card-title {
+        font-size: 16px;
+        font-weight: 600;
+        border-bottom: solid 1px #f4780c;
+    }
+
+    .card-text {
+        font-size: 12px;
+
+    }
 
     /********** 聯絡我 **********/
     .mailicon{
@@ -315,13 +319,29 @@
 
 /*************** sm ***************/
 @media(max-width: 576px) {
+    .card-icon {
+        width: 60%;
+    }
+    .title {
+        font-size: 24px;
+    }
+
+    .intro {
+        letter-spacing: 1.5px;
+        font-size: 16px;
+        line-height: 2;
+        width: 90%;
+    }
 
     .right-bg{
         padding: 36px 16px;
     }
 
-
     /********** 聯絡我 **********/
+    .contact-p {
+        font-size: 16px;
+    }
+
     .mailicon{
         display: none;
     }
