@@ -4726,7 +4726,6 @@ input[type="button"].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
   overflow: hidden;
 }
@@ -6561,7 +6560,7 @@ a.close.disabled {
 .carousel-indicators {
   position: absolute;
   right: 0;
-  bottom: -15px;
+  bottom: 0;
   left: 0;
   z-index: 15;
   display: -ms-flexbox;
@@ -6578,11 +6577,11 @@ a.close.disabled {
   box-sizing: content-box;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border-radius: 100%;
-  margin-right: 3px;
-  margin-left: 3px;
+  margin-right: 5px;
+  margin-left: 5px;
   text-indent: -999px;
   cursor: pointer;
   background-color: #fff;
@@ -6600,6 +6599,7 @@ a.close.disabled {
 }
 
 .carousel-indicators .active {
+  background-color: #f4780c;
   opacity: 1;
 }
 

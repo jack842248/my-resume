@@ -9,12 +9,12 @@ $(document).ready(function(){
         $(this).parent().siblings().find(".skillcard").find(".card-body").removeClass("card-body-down");
     });
 
-
-
-    $(".web-btn").hover(function(){
-        $(this).parent().siblings(".card").find(".card-img-overlay").find(".bg-overlay").fadeToggle();
+    $(".web-box").hover(function(){
+        $(this).find(".web-overlay").toggleClass("web-bottom");
     });
-
+    $(".web-btn").hover(function(){
+        $(this).parent().find(".web-box").find(".web-overlay").toggleClass("web-bottom");
+    });
 
 
 
