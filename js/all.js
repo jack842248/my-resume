@@ -1,4 +1,27 @@
 $(document).ready(function(){
+    var initSubject='',initBody='';
+
+    function submitHandler(){
+        var to = "jack842248@gmail.com",
+            name = nameText.val,
+            email = emailText.val,
+            subject = subText.val;
+
+        var body = bodyText.val + name,
+            body = body+"From："+nameText.val,
+            body = body+"Email："+emailText.val;
+        mailTo.href="mailto:"+to+"?subject="+subject+"&body="+body,
+        mailTo.click();
+    }
+    function init(){
+        subText.val=initSubject;
+        toText.val=initTo;
+        bodyText.val=initBody;
+    }
+
+
+
+
     var skills=[
         {
             img:"images/webicon/HTML5.svg",
