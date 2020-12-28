@@ -24,7 +24,7 @@ head
   link(rel="stylesheet" href="css/lightbox2.css")
   link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css")
   link(rel="stylesheet" href="css/style.css")
-body
+body(onload="init()")
   wrap.container-fluid.p-0.m-0
     .row
       header.col-xl-3.p-4
@@ -147,7 +147,7 @@ body
               hr.my-4
               h2.title.my-4 聯絡我
               p.contact-content 如果你覺得我不錯，考慮給我個工作機會的話，請聯繫我!謝謝!!!<br>我將會一直不斷的觀看更多教學，來提升自己的網頁能力。
-            form.row(id="myform" enctype="text/plain" accept-charset="utf-8" onload="init()")
+            form.row(enctype="text/plain" accept-charset="utf-8" )
               .col-md-8.mt-4
                 .form-row.px-3
                   .col-lg-6.form-group
@@ -159,8 +159,7 @@ body
                 .col-12.form-group
                   textarea.form-control.bg-light(id="bodyText" name="your-message" cols="40" rows="10" placeholder="請輸入信件內容..." required)
                 .col-12
-                  input.btn(type="button" value="送出信件" onclick="submitHandler(myform);")
-                  a#mailTo
+                  input.btn(id="mailTo" onclick="sumbitmail()" type="button" value="送出信件" ;)
               .d-none.d-md-block
                 i.fas.fa-home.fa-2x
                 p 高雄市前鎮區瑞春街93巷53號

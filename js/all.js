@@ -1,7 +1,7 @@
 $(document).ready(function(){
     var initSubject='',initBody='';
 
-    function submitHandler(){
+    function sumbitmail(){
         var to = "jack842248@gmail.com",
             name = nameText.val,
             email = emailText.val,
