@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    window.onload = init(); 
     var initSubject='',initBody='';
 
     function sumbitmail(){
@@ -18,6 +19,7 @@ $(document).ready(function(){
         toText.val=initTo;
         bodyText.val=initBody;
     }
+    
 
 
 

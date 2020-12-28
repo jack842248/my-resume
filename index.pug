@@ -24,7 +24,7 @@ head
   link(rel="stylesheet" href="css/lightbox2.css")
   link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css")
   link(rel="stylesheet" href="css/style.css")
-body(onload="init()")
+body
   wrap.container-fluid.p-0.m-0
     .row
       header.col-xl-3.p-4
@@ -159,7 +159,8 @@ body(onload="init()")
                 .col-12.form-group
                   textarea.form-control.bg-light(id="bodyText" name="your-message" cols="40" rows="10" placeholder="請輸入信件內容..." required)
                 .col-12
-                  input.btn(id="mailTo" onclick="sumbitmail()" type="button" value="送出信件" ;)
+                  input.btn(type="button" onclick="submitHandler();" value="送出信件")
+                  a#mailTo
               .d-none.d-md-block
                 i.fas.fa-home.fa-2x
                 p 高雄市前鎮區瑞春街93巷53號
