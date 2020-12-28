@@ -142,12 +142,12 @@ body
                 img(:src="work")
             .col-12.mt-4
               a.btn(href="https://www.instagram.com/jack842248/" style="white-space: nowrap") 更多作品
-          section.row(onload="init()")
+          section.row
             .col-12
               hr.my-4
               h2.title.my-4 聯絡我
               p.contact-content 如果你覺得我不錯，考慮給我個工作機會的話，請聯繫我!謝謝!!!<br>我將會一直不斷的觀看更多教學，來提升自己的網頁能力。
-            form.row(enctype="text/plain" accept-charset="utf-8")
+            form.row(id="myform" enctype="text/plain" accept-charset="utf-8" onload="init()")
               .col-md-8.mt-4
                 .form-row.px-3
                   .col-lg-6.form-group
@@ -159,7 +159,7 @@ body
                 .col-12.form-group
                   textarea.form-control.bg-light(id="bodyText" name="your-message" cols="40" rows="10" placeholder="請輸入信件內容..." required)
                 .col-12
-                  input.btn(type="button" value="送出信件" onclick="submitHandler();")
+                  input.btn(type="button" value="送出信件" onclick="submitHandler(myform);")
                   a#mailTo
               .d-none.d-md-block
                 i.fas.fa-home.fa-2x
