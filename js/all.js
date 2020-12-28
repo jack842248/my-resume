@@ -2,13 +2,13 @@ $(document).ready(function(){
     window.onload = init(); 
     var initSubject='',initBody='';
 
-    function sumbitmail(){
+    function submitHandler(){
         var to = "jack842248@gmail.com",
             name = nameText.val,
             email = emailText.val,
             subject = subText.val;
 
-        var body = bodyText.val + name,
+        var body = bodyText.val+name,
             body = body+"From："+nameText.val,
             body = body+"Email："+emailText.val;
         mailTo.href="mailto:"+to+"?subject="+subject+"&body="+body,
