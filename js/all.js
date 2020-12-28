@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    window.onload = init(); 
+    
     var initSubject='',initBody='';
 
     function submitHandler(){
