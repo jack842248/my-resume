@@ -74,7 +74,7 @@ body
             .col-12
               hr.my-4
               h2.title.my-4 網站作品集
-            .col-12.mb-4
+            .col-12.mb-5
               #carouselExampleCaptions.carousel.slide(data-ride="carousel")
                 ol.carousel-indicators
                   li.active(data-target="#carouselExampleCaptions" data-slide-to="0")
@@ -106,19 +106,19 @@ body
                   span.carousel-control-prev-icon(aria-hidden="true")
                 a.carousel-control-next(href="#carouselExampleCaptions" data-slide="next")
                   span.carousel-control-next-icon(aria-hidden="true")
-            .col-md-6.mb-4
+            .col-md-6.mb-5
               a.web-box(href="https://codepen.io/mteqifii/pen/KKgmreM" target="_blank")
                 .web-img(style="background-image:url(images/webpic/shoplist.jpg)")
                 .web-overlay
                   p 用Vue.js實作購物清單，可以新增或刪除品項，並且自動加總商品價錢。框架用Bootstrap，符合RWD響應式網頁
               a.web-btn(href="https://codepen.io/mteqifii/pen/KKgmreM" target="_blank") 前往網址
-            .col-md-6.mb-4
+            .col-md-6.mb-5
               a.web-box(href="https://codepen.io/mteqifii/pen/wvzMpJB" target="_blank")
                 .web-img(style="background-image:url(images/webpic/exchangelist.jpg)")
                 .web-overlay
                   p 用Vue.js實作幣值匯率轉換，可以輸入將要轉換的金額，並且及時觀看。框架用Bootstrap，符合RWD響應式網頁
               a.web-btn(href="https://codepen.io/mteqifii/pen/wvzMpJB" target="_blank") 前往網址
-            .col-12.mb-4
+            .col-12.mb-5
               a.web-box(href="https://jack842248.github.io/bmi-calc/" target="_blank")
                 .web-img(style="background-image:url(images/webpic/bmi-calc.jpg)")
                 .web-overlay
@@ -147,27 +147,27 @@ body
               hr.my-4
               h2.title.my-4 聯絡我
               p.contact-content 如果你覺得我不錯，考慮給我個工作機會的話，請聯繫我!謝謝!!!<br>我將會一直不斷的觀看更多教學，來提升自己的網頁能力。
-            form.row(enctype="text/plain" accept-charset="utf-8" )
+            form.row.w-100(action='https://formspree.io/f/xqkgggya' method='POST')
               .col-md-8.mt-4
                 .form-row.px-3
                   .col-lg-6.form-group
-                    input.form-control.bg-light(id="nameText" type="text" name="Name" placeholder="請輸入您的大名" required)
+                    input.form-control.bg-light(type="text" name="name" placeholder="請輸入您的大名" required)
                   .col-lg-6.form-group
-                    input.form-control.bg-light(id="emailText" type="email" name="Email" placeholder="請輸入您的信箱" required)
+                    input.form-control.bg-light(type="email" name="_replyto" placeholder="請輸入您的信箱" required)
                 .col-12.form-group
-                  input.form-control.bg-light(id="subText" type="text" name="Subject" aria-invalid="false" placeholder="請輸入信件主旨" required)
+                  input.form-control.bg-light(type="text" name="Subject" placeholder="請輸入信件主旨" required)
                 .col-12.form-group
-                  textarea.form-control.bg-light(id="bodyText" name="your-message" cols="40" rows="10" placeholder="請輸入信件內容..." required)
+                  textarea.form-control.bg-light(name="message" cols="40" rows="10" placeholder="請輸入信件內容..." required)
                 .col-12
-                  input.btn(type="button" onclick="submitHandler();" value="送出信件")
-                  a#mailTo
-              .d-none.d-md-block
-                i.fas.fa-home.fa-2x
-                p 高雄市前鎮區瑞春街93巷53號
-                i.fas.fa-mobile-alt.fa-2x
-                p 0905-351106
-                i.far.fa-envelope-open.fa-2x
-                p jack842248@gmail.com
+                  input.btn(type="submit" value="送出信件")
+              .col-md-4.mt-4
+                .d-none.d-md-block
+                  i.fas.fa-home.fa-2x
+                  p 高雄市前鎮區瑞春街93巷53號
+                  i.fas.fa-mobile-alt.fa-2x
+                  p 0905-351106
+                  i.far.fa-envelope-open.fa-2x
+                  p jack842248@gmail.com
       footer.col-xl-12.mt-4
         .iconbox
           a(href="https://www.facebook.com/jack842248")
