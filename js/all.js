@@ -148,6 +148,12 @@ $(document).ready(function(){
         $(this).parent().find(".web-box").find(".web-overlay").toggleClass("web-overlay-up");
     });
     $(window).scroll(function(){
+        if($(window).scrollTop()>0){
+            $(".scrolldown").addClass("scrolldown-transparent");
+        }
+        else{
+            $(".scrolldown").removeClass("scrolldown-transparent");
+        }
         var scrollvalue = $(window).scrollTop();
         $('header.col-xl-3').css('background-position-y', -(scrollvalue / 40) + 'px');
     });

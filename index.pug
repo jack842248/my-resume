@@ -2,7 +2,7 @@ doctype html
 html(lang="zh-tw")
 head
   meta(charset="UTF-8")
-  meta(http-equiv="X-UA-compatible" content="ie=edgechrome=1")
+  meta(http-equiv="X-UA-compatible" content="ie=edge,chrome=1")
   meta(name='viewport' content='width=device-width' height='device-height' initial-scale='1' minimum-scale='1' maximum-scale='1' user-scalable='no')
   title Jack Huang RESUME
   meta(name="description" content="黃俊傑的個人網站")
@@ -20,10 +20,19 @@ head
   link(rel="canonical" href="https://jack842248.github.io/")
   link(rel="icon" href="./images/favicon.ico")
   base(target="_blank")
+
+  script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-YW97RR9D2W')
+  script.
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YW97RR9D2W');
+    
   link(rel="stylesheet" href="css/bootstrap_4.5.3.css")
   link(rel="stylesheet" href="css/lightbox2.css")
   link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css")
   link(rel="stylesheet" href="css/style.css")
+
 body
   wrap.container-fluid.p-0.m-0
     .row
@@ -49,7 +58,7 @@ body
             i.fas.fa-envelope.fa-2x
           .copyright.mt-4 jack842248@github.io｜Jack Huang RESUME
         .scrolldown
-      main.col-xl-9
+      main.col-xl-9.pr-0
         .container.p-4
           section#about.row
             .col-12
@@ -141,21 +150,21 @@ body
                 img(:src="work")
             .col-12.mt-4
               a.btn(href="https://www.instagram.com/jack842248/" style="white-space: nowrap") 更多作品
-          section.row
+          section.row.justify-content-center
             .col-12
               hr.my-4
               h2.title.my-4 聯絡我
               p.contact-content 如果你覺得我不錯，考慮給我個工作機會的話，請聯繫我!謝謝!!!<br>我將會一直不斷的觀看更多教學，來提升自己的網頁能力。
             form.row.w-100(action='https://formspree.io/f/xqkgggya' method='POST')
               .col-md-8.mt-4
-                .form-row.px-3
-                  .col-lg-6.form-group
+                .form-row
+                  .col-lg-6.form-group.p-0
                     input.form-control.bg-light(type="text" name="name" placeholder="請輸入您的大名" required)
-                  .col-lg-6.form-group
+                  .col-lg-6.form-group.p-0
                     input.form-control.bg-light(type="email" name="_replyto" placeholder="請輸入您的信箱" required)
-                .col-12.form-group
+                .col-12.form-group.p-0
                   input.form-control.bg-light(type="text" name="Subject" placeholder="請輸入信件主旨" required)
-                .col-12.form-group
+                .col-12.form-group.p-0
                   textarea.form-control.bg-light(name="message" cols="40" rows="10" placeholder="請輸入信件內容..." required)
                 .col-12
                   input.btn(type="submit" value="送出信件")
