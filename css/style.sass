@@ -178,7 +178,7 @@ section#about
         display: block
         position: absolute
         background-color: #ffffff
-        height: auto
+        height: calc(100% - 2px)
         width: calc(100% - 2px)
         border-radius: 0.5rem
         margin: 0 auto
@@ -275,9 +275,11 @@ section#about
 
 .works-overlay
     position: relative
-    display: flex
+    display: block
     border-radius: 10px
     overflow: hidden
+    img
+        background-size: cover
     &::before
         content: ''
         display: block
