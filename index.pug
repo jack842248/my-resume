@@ -20,17 +20,6 @@ head
   link(rel="canonical" href="https://jack842248.github.io/")
   link(rel="icon" href="./images/favicon.ico")
   base(target="_blank")
-  
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-YW97RR9D2W')
-  script.
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-YW97RR9D2W');
-
-
-    
   link(rel="stylesheet" href="css/bootstrap_4.5.3.css")
   link(rel="stylesheet" href="css/lightbox2.css")
   link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css")
@@ -44,7 +33,6 @@ body
           img.my-photo.my-4(src="images/my_photo.png")
         h1 Hello! 
           strong 我是黃俊傑<br>每天努力學習網頁設計
-        small.my-3 | 友善 | 謙虛 | 愛乾淨 | 責任感 |
         ul.my-4
           li 男/B型
           li 1995.02.24(25歲)
@@ -67,20 +55,20 @@ body
             .col-12
               h2.title.my-4 關於我
               p.intro-content 我來自桃園中壢，畢業於大葉大學多媒體設計系，近日搬來高雄前鎮。<br>平時很常使用3C產品，在網路上看到許多互動網頁覺得很有趣，決定在Hahow好學校購買課程，每天觀看教學來學習網頁語法。<br>近日也開始學習六角學院所開設的課程，了解到更多專業的技巧與知識，目標是希望找到一份能穩定且長久的工作。
-          section#skill.form-row
+          section.form-row#app
             .col-12
               hr.my-4
               h2.title.my-4 網頁技能卡
-            .col-6.col-sm-4.col-md-3.my-2(v-for="skill in skills")
-              .card.py-4(v-on:click="button(skill)")
+            .col-6.col-sm-4.col-md-3.my-2(v-for="item in skills")
+              .card.py-4(@click="scroll(item)")
                 span.card-border-1
                 span.card-border-2
                 span.card-overlay
                 .card-img-top
-                  img.card-icon(v-bind:src="skill.img" v-bind:class="{'card-icon-down':skill.selceted}")
-                ul.card-body(v-bind:class="{'card-body-down':skill.selceted}")
-                  li.card-title {{skill.title}}
-                  li.card-text(v-html="skill.text")
+                  img.card-icon(:src="item.img" :class="{'card-icon-down':item.scroll}")
+                ul.card-body(:class="{'card-body-down':item.scroll}")
+                  li.card-title {{item.title}}
+                  li.card-text(v-html="item.text")
           section.row
             .col-12
               hr.my-4
@@ -113,44 +101,56 @@ body
                   .carousel-item
                     a(href="https://cdpn.io/mteqifii/debug/vYXYXZg/NjrYzGPbojoA" target="_blank")
                       img.d-block.w-100(src="images/webpic/hexschool.jpg")
+
                 a.carousel-control-prev(href="#carouselExampleCaptions" data-slide="prev")
                   span.carousel-control-prev-icon(aria-hidden="true")
                 a.carousel-control-next(href="#carouselExampleCaptions" data-slide="next")
                   span.carousel-control-next-icon(aria-hidden="true")
+
+
             .col-md-6.mb-5
-              a.web-box(href="https://codepen.io/mteqifii/pen/KKgmreM" target="_blank")
-                .web-img(style="background-image:url(images/webpic/shoplist.jpg)")
+              a.web-box(href="https://jack842248.github.io/bmi-calc/" target="_blank")
+                .web-img(style="background-image:url(images/webpic/bmi-calc.png)")
                 .web-overlay
-                  p 用Vue.js實作購物清單，可以新增或刪除品項，並且自動加總商品價錢。框架用Bootstrap，符合RWD響應式網頁
-              a.web-btn(href="https://codepen.io/mteqifii/pen/KKgmreM" target="_blank") 前往網址
+                  p 使用jQuery+animateNumber套件，做出能試算人體BMI以及體脂肪率功能的計算器。框架樣式部分使用Bootstrap4元件。
+              a.web-btn(href="https://jack842248.github.io/bmi-calc/" target="_blank") 前往網址
+
+
             .col-md-6.mb-5
-              a.web-box(href="https://codepen.io/mteqifii/pen/wvzMpJB" target="_blank")
-                .web-img(style="background-image:url(images/webpic/exchangelist.jpg)")
+              a.web-box(href="https://jack842248.github.io/shop-list/" target="_blank")
+                .web-img(style="background-image:url(images/webpic/shop-list.png)")
                 .web-overlay
-                  p 用Vue.js實作幣值匯率轉換，可以輸入將要轉換的金額，並且及時觀看。框架用Bootstrap，符合RWD響應式網頁
-              a.web-btn(href="https://codepen.io/mteqifii/pen/wvzMpJB" target="_blank") 前往網址
+                  p 使用javascrpit+localStorage瀏覽器暫存資料，做出能紀錄以及自動加總的計算器。框架樣式部分使用Bootstrap4元件。
+              a.web-btn(href="https://jack842248.github.io/shop-list/" target="_blank") 前往網址
+              
+
+
             .col-12.mb-5
               a.web-box(href="https://jack842248.github.io/bmi-calc/" target="_blank")
                 .web-img(style="background-image:url(images/webpic/bmi-calc.jpg)")
                 .web-overlay
-                  p 用javascript、jQuery做BMI、體脂肪計算功能。<br>外框使用Bootstrap，符合RWD響應式。<br>呈現動畫效果使用animateNumber套件。
+                  p 456
               a.web-btn(href="https://jack842248.github.io/bmi-calc/" target="_blank") 前往網址
           section#works.form-row
             .col-12
               hr.my-4
               h2.title.my-4 Illustrator作品
             .col-6.col-sm-4.col-md-3.col-lg-2.mt-2(v-for="work in works1")
-              a.works-overlay(:href="work" data-lightbox="illustratorpic")
+              a.works-overlay(:href="work" data-lightbox="lightbox1")
                 img(:src="work")
+
             .d-none.d-sm-block.col-sm-4.col-md-3.col-lg-2.mt-2(v-for="work in works2")
-              a.works-overlay(:href="work" data-lightbox="illustratorpic")
+              a.works-overlay(:href="work" data-lightbox="lightbox1")
                 img(:src="work")
+
             .d-none.d-md-block.col-md-3.col-lg-2.mt-2(v-for="work in works3")
-              a.works-overlay(:href="work" data-lightbox="illustratorpic")
+              a.works-overlay(:href="work" data-lightbox="lightbox1")
                 img(:src="work")
+
             .d-none.d-lg-block.col-lg-2.mt-2(v-for="work in works4")
-              a.works-overlay(:href="work" data-lightbox="illustratorpic")
+              a.works-overlay(:href="work" data-lightbox="lightbox1")
                 img(:src="work")
+
             .col-12.mt-4
               a.btn(href="https://www.instagram.com/jack842248/" style="white-space: nowrap") 更多作品
           section.row.justify-content-center
