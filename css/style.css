@@ -111,20 +111,23 @@ header.col-xl-3 .copyright {
   font-size: 12px;
 }
 
-header.col-xl-3 .fa-facebook,
-header.col-xl-3 .fa-instagram,
-header.col-xl-3 .fa-envelope {
+header.col-xl-3 .fa-facebook-square,
+header.col-xl-3 .fa-instagram-square,
+header.col-xl-3 .fa-envelope,
+header.col-xl-3 .fa-blogger {
   margin: 5px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: #ececec;
 }
 
-header.col-xl-3 .fa-facebook:hover, header.col-xl-3 .fa-facebook:active,
-header.col-xl-3 .fa-instagram:hover,
-header.col-xl-3 .fa-instagram:active,
+header.col-xl-3 .fa-facebook-square:hover, header.col-xl-3 .fa-facebook-square:active,
+header.col-xl-3 .fa-instagram-square:hover,
+header.col-xl-3 .fa-instagram-square:active,
 header.col-xl-3 .fa-envelope:hover,
-header.col-xl-3 .fa-envelope:active {
+header.col-xl-3 .fa-envelope:active,
+header.col-xl-3 .fa-blogger:hover,
+header.col-xl-3 .fa-blogger:active {
   color: #f4780c;
 }
 
@@ -463,20 +466,23 @@ footer {
   color: #ececec;
 }
 
-footer .fa-facebook,
-footer .fa-instagram,
-footer .fa-envelope {
+footer .fa-facebook-square,
+footer .fa-instagram-square,
+footer .fa-envelope,
+footer .fa-blogger {
   margin: 5px;
   color: #ececec;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-footer .fa-facebook:hover, footer .fa-facebook:active,
-footer .fa-instagram:hover,
-footer .fa-instagram:active,
+footer .fa-facebook-square:hover, footer .fa-facebook-square:active,
+footer .fa-instagram-square:hover,
+footer .fa-instagram-square:active,
 footer .fa-envelope:hover,
-footer .fa-envelope:active {
+footer .fa-envelope:active,
+footer .fa-blogger:hover,
+footer .fa-blogger:active {
   color: #f4780c;
 }
 

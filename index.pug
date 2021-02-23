@@ -28,6 +28,7 @@ head
 body
   wrap.container-fluid.p-0.m-0
     .row
+      //----------------------------------------------------------//
       header.col-xl-3.p-4
         a(href="#")
           img.my-photo.my-4(src="images/my_photo.png")
@@ -35,26 +36,44 @@ body
           strong 我是黃俊傑<br>每天努力學習網頁設計
         ul.my-4
           li 男/B型
-          li 1995.02.24(25歲)
+          li 1995.02.24(26歲)
           li 大葉大學多媒體設計系
           li 前鎮區瑞春街93巷53號
           li jack842248@gmail.com
           li 0905-351106
         .header-iconbox.my-3
+          a(href="https://jack842248.github.io/")
+            i.fab.fa-blogger.fa-2x
           a(href="https://www.facebook.com/jack842248")
-            i.fab.fa-facebook.fa-2x
+            i.fab.fa-facebook-square.fa-2x
           a(href="https://www.instagram.com/jack842248/")
-            i.fab.fa-instagram.fa-2x
+            i.fab.fa-instagram-square.fa-2x
           a(href="mailto:jack842248@gmail.com")
             i.fas.fa-envelope.fa-2x
           .copyright.mt-4 jack842248@github.io｜Jack Huang RESUME
         .scrolldown
+      //----------------------------------------------------------//
       main.col-xl-9.pr-0
         .container.p-4
-          section#about.row
+          section#about.row  
             .col-12
               h2.title.my-4 關於我
-              p.intro-content 我來自桃園中壢，畢業於大葉大學多媒體設計系，近日搬來高雄前鎮。<br>平時很常使用3C產品，在網路上看到許多互動網頁覺得很有趣，決定在Hahow好學校購買課程，每天觀看教學來學習網頁語法。<br>近日也開始學習六角學院所開設的課程，了解到更多專業的技巧與知識，目標是希望找到一份能穩定且長久的工作。
+              p.intro-content 
+                | 我來自桃園中壢，畢業於大葉大學多媒體設計系，近日遷居到高雄前鎮。
+                br
+                | 曾任職2年曼黛瑪璉的空間陳列人員，為公司品牌形象設計櫥窗、陳列展示、特賣會以及活動場地佈置等。
+                br
+                | 在這期間學習到不少美術、美工方面的技能，在設計繪圖、版面配置等也提升不少。
+                br
+                | 平時的我經常使用3C產品，一直以來都對網路上的各種應用都非常感興趣，尤其是結合了視覺效果的動態網頁。
+                br
+                | 因此利用遷居這段空窗期，來好好專心學習網頁設計UI/UX的流程，於是在Hahow好學校購買了線上課程。
+                br
+                | 了解整個網頁製作的流程後才知道，原來還有前後端這塊廣大的領域可以去學習，決定要再往網頁製作的部分來精進自己的能力。
+                br
+                | 於是我開始撰寫部落格來記錄，我在Hahow好學校以及六角學院，所學習到的JS原理以及知識。    
+ 
+          //----------------------------------------------------------//
           section.form-row#app
             .col-12
               hr.my-4
@@ -69,6 +88,7 @@ body
                 ul.card-body(:class="{'card-body-down':item.scroll}")
                   li.card-title {{item.title}}
                   li.card-text(v-html="item.text")
+          //----------------------------------------------------------//
           section.row
             .col-12
               hr.my-4
@@ -106,31 +126,37 @@ body
                   span.carousel-control-prev-icon(aria-hidden="true")
                 a.carousel-control-next(href="#carouselExampleCaptions" data-slide="next")
                   span.carousel-control-next-icon(aria-hidden="true")
-
-
+                  
             .col-md-6.mb-5
               a.web-box(href="https://jack842248.github.io/bmi-calc/" target="_blank")
                 .web-img(style="background-image:url(images/webpic/bmi-calc.png)")
                 .web-overlay
-                  p 使用jQuery+animateNumber套件，做出能試算人體BMI以及體脂肪率功能的計算器。框架樣式部分使用Bootstrap4元件。
+                  p 使用jQuery+animateNumber套件，自動計算BMI以及體脂肪率值，並以動態的方式顯現出來。框架樣式部分使用Bootstrap4元件。
               a.web-btn(href="https://jack842248.github.io/bmi-calc/" target="_blank") 前往網址
-
-
+            
             .col-md-6.mb-5
               a.web-box(href="https://jack842248.github.io/shop-list/" target="_blank")
                 .web-img(style="background-image:url(images/webpic/shop-list.png)")
                 .web-overlay
-                  p 使用javascrpit+localStorage瀏覽器暫存資料，做出能紀錄以及自動加總的計算器。框架樣式部分使用Bootstrap4元件。
+                  p 使用javascrpit+localStorage瀏覽器暫存資料，做出能紀錄以及自動加總的購物清單。框架樣式部分使用Bootstrap4元件。
               a.web-btn(href="https://jack842248.github.io/shop-list/" target="_blank") 前往網址
-              
 
-
-            .col-12.mb-5
-              a.web-box(href="https://jack842248.github.io/bmi-calc/" target="_blank")
-                .web-img(style="background-image:url(images/webpic/bmi-calc.jpg)")
+            .col-md-6.mb-5
+              a.web-box(href="https://jack842248.github.io/rate-exchange/" target="_blank")
+                .web-img(style="background-image:url(images/webpic/rate-exchange.png)")
                 .web-overlay
-                  p 456
-              a.web-btn(href="https://jack842248.github.io/bmi-calc/" target="_blank") 前往網址
+                  p 使用Vue.js處理陣列資料，並處理計算後數值浮點問題，再結合篩選功能，能更方便查詢。框架樣式部分使用Bootstrap4元件。
+              a.web-btn(href="https://jack842248.github.io/rate-exchange/" target="_blank") 前往網址
+
+            .col-md-6.mb-5
+              a.web-box(href="https://jack842248.github.io/view-point/" target="_blank")
+                .web-img(style="background-image:url(images/webpic/view-point.png)")
+                .web-overlay
+                  p 使用AJAX+leaflet.js地圖套件，使用取得高雄市政府提供的API資料後，將各個資料顯示在相對應的座標上。
+              a.web-btn(href="https://jack842248.github.io/view-point/" target="_blank") 前往網址
+
+
+          //----------------------------------------------------------//
           section#works.form-row
             .col-12
               hr.my-4
@@ -153,6 +179,7 @@ body
 
             .col-12.mt-4
               a.btn(href="https://www.instagram.com/jack842248/" style="white-space: nowrap") 更多作品
+          //----------------------------------------------------------//
           section.row.justify-content-center
             .col-12
               hr.my-4
@@ -179,12 +206,15 @@ body
                   p 0905-351106
                   i.far.fa-envelope-open.fa-2x
                   p jack842248@gmail.com
+      //----------------------------------------------------------//
       footer.col-xl-12.mt-4
         .iconbox
+          a(href="https://jack842248.github.io/")
+            i.fab.fa-blogger.fa-2x
           a(href="https://www.facebook.com/jack842248")
-            i.fab.fa-facebook.fa-2x
+            i.fab.fa-facebook-square.fa-2x
           a(href="https://www.instagram.com/jack842248/")
-            i.fab.fa-instagram.fa-2x
+            i.fab.fa-instagram-square.fa-2x
           a(href="mailto:jack842248@gmail.com")
             i.fas.fa-envelope.fa-2x
         .copyright jack842248@github.io｜Jack Huang RESUME

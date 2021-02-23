@@ -3,54 +3,60 @@ $(document).ready(function(){
         {
             img:"images/webicon/HTML5.svg",
             title:"HTML5",
-            text:"熟悉PUG(jade)語法<br>SVG圖形繪製<br>Emmet語法",
+            text:"會使用pug撰寫<br>繪製SVG圖型<br>",
             scroll: false
         },
         {
             img:"images/webicon/CSS3.svg",
             title:"CSS3",
-            text:"熟悉Sass語法<br>@import模組化<br>keyframes動畫",
+            text:"會使用SASS撰寫<br>@import模組化<br>keyframes動畫",
+            scroll: false
+        },
+        {
+            img:"images/webicon/JS.svg",
+            title:"javascript",
+            text:"會使用ES6語法撰寫<br>AJAX抓取資料",
             scroll: false
         },
         {
             img:"images/webicon/Bootstrap.svg",
             title:"Bootstrap4",
-            text:"能做出RWD響應式網頁<br>各種套件應用<br>搭配滾動data效果",
+            text:"會使用grid格線系統<br>做出RWD響應式網頁",
             scroll: false
         },
         {
             img:"images/webicon/jQuery.svg",
             title:"jQuery",
-            text:"基礎語法應用<br>建立JSON和陣列資料",
+            text:"會應用基本動態效果<br>AJAX抓取資料",
             scroll: false
         },
         {
             img:"images/webicon/Vue.js.svg",
             title:"Vue.js",
-            text:"基礎語法應用<br>API資料載入應用",
-            scroll: false
-        },
-        {
-            img:"images/webicon/Codepen.svg",
-            title:"Codepen",
-            text:"使用Codepen進行<br>快速測試、編譯等",
+            text:"會應用基本模板語法<br>建立component元件",
             scroll: false
         },
         {
             img:"images/webicon/VS Code.svg",
-            title:"VS Code",
+            title:"Visual Studio Code",
             text:"建立基本資料層架構<br>安裝插件即時預覽",
             scroll: false
         },
         {
+            img:"images/webicon/GitHub.svg",
+            title:"GitHub",
+            text:"建立repo將網站上傳至<br>GitHub Pages<br>進行基本版本控制",
+            scroll: false
+        },
+        {
             img:"images/webicon/Photoshop.svg",
-            title:"Photoshop",
+            title:"Adobe Photoshop",
             text:"能使用PS編排網站<br>基本調色、修圖、去背",
             scroll: false
         },
         {
             img:"images/webicon/Illustrator.svg",
-            title:"Illustrator",
+            title:"Adobe Illustrator",
             text:"能使用AI繪製icon<br>基本編排、修改、繪製",
             scroll: false
         },
@@ -61,33 +67,9 @@ $(document).ready(function(){
             scroll: false
         },
         {
-            img:"images/webicon/GitHub.svg",
-            title:"GitHub",
-            text:"建立repo將網站上傳至<br>GitHub Pages<br>進行基本版本控制",
-            scroll: false
-        },
-        {
-            img:"images/webicon/Hugo.svg",
-            title:"Hugo",
+            img:"images/webicon/Markdown.svg",
+            title:"Markdown語法",
             text:"使用過Hugo theme<br>用Markdown語法<br>進行簡易修改",
-            scroll: false
-        },
-        {
-            img:"images/webicon/Google Search Console.svg",
-            title:"Search Console",
-            text:"了解基本應用<br>提交Sitemap給爬蟲",
-            scroll: false
-        },
-        {
-            img:"images/webicon/Google Analytics.svg",
-            title:"Analytics",
-            text:"了解基本應用<br>設置追蹤碼來分析",
-            scroll: false
-        },
-        {
-            img:"images/webicon/AOS.js.svg",
-            title:"AOS.js",
-            text:"使用data-aos滾動效果",
             scroll: false
         }
     ];
