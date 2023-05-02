@@ -57,7 +57,7 @@ $(document).ready(function(){
         {
             img:"images/webicon/Illustrator.svg",
             title:"Adobe Illustrator",
-            text:"能使用AI繪製icon<br>基本編排、修改、繪製",
+            text:"繪製LOGO、icon<br>排版、繪製",
             scroll: false
         },
         {
@@ -69,7 +69,7 @@ $(document).ready(function(){
         {
             img:"images/webicon/Markdown.svg",
             title:"Markdown語法",
-            text:"使用過Hugo theme<br>用Markdown語法<br>進行簡易修改",
+            text:"用Markdown撰寫文章",
             scroll: false
         }
     ];
