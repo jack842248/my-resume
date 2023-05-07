@@ -89,7 +89,6 @@ $(document).ready(function(){
                 item.scroll = !item.scroll;
             }
         }
-
     });
     var works1=[
         "images/illustratorpic/broom.png",

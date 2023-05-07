@@ -267,11 +267,11 @@ main.col-xl-9 {
 }
 
 .card:hover > .card-border-1, .card:active > .card-border-1 {
-  border-width: 200px 200px 0 0;
+  border-width: 250px 250px 0 0;
 }
 
 .card:hover > .card-border-2, .card:active > .card-border-2 {
-  border-width: 0 0 200px 200px;
+  border-width: 0 0 250px 250px;
 }
 
 .card .card-img-top .card-icon {
