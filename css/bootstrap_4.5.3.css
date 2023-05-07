@@ -6416,6 +6416,8 @@ a.close.disabled {
 
 .carousel {
   position: relative;
+  border: solid 1px #eeeeee;
+  border-radius: 5px;
 }
 
 .carousel.pointer-event {
